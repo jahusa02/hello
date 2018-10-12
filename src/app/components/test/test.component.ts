@@ -14,11 +14,9 @@ export class TestComponent implements OnInit {
   isEdit: boolean;
   d: any;
 
-
   constructor() {
     this.test(document);
     this.test2(document);
-
   }
 
   ngOnInit() {
@@ -41,10 +39,8 @@ export class TestComponent implements OnInit {
     js.setAttribute('type', 'xing/login');
     js.id = id;
 
-
     document.getElementsByTagName('body')[0].appendChild(js);
     document.getElementById('t').innerHTML = "{\"consumer_key\": \"127a3a86d946b110a9ad\"}";
-
   }
 
   test3(document) {

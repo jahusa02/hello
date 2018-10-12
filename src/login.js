@@ -11,15 +11,10 @@ function onXingAuthLogin(response) {
     output = 'Error: ' + response.error;
   }
 
-
-
-
   document.getElementById('output').innerHTML = output;
-
 
   i = document.createElement('img');
   i.setAttribute("src", response.user.photo_urls.maxi_thumb);
-
 
   document.getElementById('img').appendChild(i);
 }
